@@ -1,0 +1,44 @@
+* {
+  color: red;
+  font-family: "Roboto", "Arial", "Helvetica", sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(17, 20, 20);
+}
+
+h1, p {
+  margin: 0;
+  height: 10vh;
+  max-height: 10vw;
+  width: 100vw;
+  max-width: 100vh;
+  background-color: rgba(17, 20, 20, 0.342);
+}
+
+h1 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: start;
+  align-items: flex-start;
+  font-size: 6em;
+}
+
+#visuals {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100vh;
+  max-height: 100vw;
+  margin: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("assets/images/SpaceFrensBg1.png");
+  background-size: cover;
+}
+
+#visuals img {
+  height: 15%;
+}
