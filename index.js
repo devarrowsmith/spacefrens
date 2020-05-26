@@ -12,7 +12,7 @@ const addFren = (axisNumber) => {
 };
 //the variable numSpaceFrens here will be replaced with the length of the array of people in space.
 for (i = 0; i < numSpaceFrens; i++) {
-  addFren();
+  addFren(i+1);
 };
 
 if (numSpaceFrens === 1) {
