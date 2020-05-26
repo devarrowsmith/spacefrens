@@ -1,5 +1,5 @@
 * {
-  color: red;
+  color: whitesmoke;
   font-family: "Roboto", "Arial", "Helvetica", sans-serif;
 }
 
@@ -8,29 +8,14 @@ body {
   background-color: rgb(17, 20, 20);
 }
 
-h1, p {
-  margin: 0;
-  height: 10vh;
-  max-height: 10vw;
-  width: 100vw;
-  max-width: 100vh;
-  background-color: rgba(17, 20, 20, 0.342);
-}
 
-h1 {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: start;
-  align-items: flex-start;
-  font-size: 6em;
-}
-
-#visuals {
+#display {
   width: 100vw;
   height: 100vh;
   max-width: 100vh;
   max-height: 100vw;
-  margin: auto;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
@@ -39,6 +24,29 @@ h1 {
   background-size: cover;
 }
 
-#visuals img {
+.textbox {
+  margin: 0;
+  padding: 0;
+  height: 15vh;
+  max-height: 15vw;
+  width: 100vw;
+  max-width: 100vh;
+  background-color: rgba(17, 20, 20, 0.342);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: start;
+  align-items: center;
+}
+
+h1 {
+  font-size: 7vw;
+}
+
+p {
+  font-size: 5vw;
+}
+
+
+#display img {
   height: 15%;
 }
