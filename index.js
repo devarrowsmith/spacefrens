@@ -4,8 +4,11 @@ console.log('JS is connected.');
 const numSpaceFrens = Math.floor(Math.random()*5)+1;
 const frenSpacingDegrees = 360/numSpaceFrens;
 
-const addFren = () => {
-  document.getElementById(`spacefrens`).innerHTML += `<img id="spacefren" src="assets/images/SpaceFren.png">`;
+const addFren = (axisNumber) => {
+  document.getElementById(`spacefrens`).innerHTML += 
+    `<div class= "space_fren_axis" id="axis${axisNumber}">
+      <img id="spacefren" src="assets/images/SpaceFren.png">
+    </div>`;
 };
 
 //the variable numSpaceFrens here will be replaced with the length of the array of people in space.
