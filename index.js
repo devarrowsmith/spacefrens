@@ -14,21 +14,10 @@ const addFren = (axisNumber) => {
     </div>`;
   angleAdjust += frenSpacingDegrees;
   document.getElementById(`axis${axisNumber}`).style.transform = `rotate(${angleAdjust}deg)`;
-  
   document.getElementById(`axis${axisNumber}`).style.webkitAnimation = `spin${axisNumber} 5s linear infinite`;
-  document.getElementById(`axis${axisNumber}`).style.mozAnimation = `spin${axisNumber} 5s linear infinite`;
-  document.getElementById(`axis${axisNumber}`).style.animation = `spin${axisNumber} 5s linear infinite`;
-  
-
-  sheet.insertRule(
-    `@-moz-keyframes spin${axisNumber} { 0% { -webkit-transform: rotate(${0+angleAdjust}deg);}; 100% { -webkit-transform: rotate(${360+angleAdjust}deg); } }`, sheet.cssRules.length
-  );
-  //TODO: non-Mozilla rules aren't working (Chrome). Test after you get the Mozilla version working.
-
   sheet.insertRule(
     `@-webkit-keyframes spin${axisNumber} { 0% { -webkit-transform: rotate(${0+angleAdjust}deg);} 100% { -webkit-transform:rotate(${360+angleAdjust}deg);} }`, sheet.cssRules.length
   );
-  sheet.insertRule(`@keyframes spin${axisNumber} { 100% { -webkit-transform: rotate(${0+angleAdjust}deg); transform:rotate(${360+angleAdjust}deg);}}`, sheet.cssRules.length);
 };
 
 for (i = 0; i < numSpaceFrens; i++) {
