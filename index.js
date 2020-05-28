@@ -1,16 +1,19 @@
 console.log('JS is connected.');
 
 //numSpaceFrens will be replaced with an array containing the names of people in space.
-const numSpaceFrens = Math.floor(Math.random()*6);
+const numSpaceFrens = 2 /*Math.floor(Math.random()*6);*/
 const frenSpacingDegrees = 360/numSpaceFrens;
+let angleAdjust = 0;
 
 const addFren = (axisNumber) => {
   document.getElementById(`spacefrens`).innerHTML += 
     `<div class= "space_fren_axis" id="axis${axisNumber}">
       <img id="spacefren" src="assets/images/SpaceFren.png">
     </div>`;
+  angleAdjust += frenSpacingDegrees;
+  document.getElementById(`axis${axisNumber}`).style.transform = `rotate(${angleAdjust}deg)`;
 };
-//the variable numSpaceFrens here will be replaced with the length of the array of people in space.
+
 for (i = 0; i < numSpaceFrens; i++) {
   addFren(i+1);
 };

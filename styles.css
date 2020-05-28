@@ -46,31 +46,69 @@ p {
   font-size: 5vw;
 }
 
+#spacefrens {
+  width:100vw;
+  max-width: 100vh;
+  height: 70vh;
+  max-height: 70vw;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
 .space_fren_axis{
   height: 15vh;
   max-height: 15vw;
-  width: 100vw;
-  max-width: 100vh;
+  width: 70vw;
+  max-width: 70vh;
   display: flex;
+  position: absolute;
+  top: 42.5%;
+  left: 15%;
   flex-flow: row nowrap;
   justify-content: start;
-
-
-    /* position: absolute; */
-    /* top: 50%; */
-    /* left: 50%; */
-    /* margin:-60px 0 0 -60px; */
-    -webkit-animation:spin 4s linear infinite;
-    -moz-animation:spin 4s linear infinite;
-    animation:spin 4s linear infinite;
 }
-
-@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
-@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
-@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg);
-} }
 
 #display img {
   height: 100%;
+  -webkit-animation: fren-spin 10s linear infinite;
+  -moz-animation: fren-spin 10s linear infinite;
+  animation: fren-spin 10s linear infinite;
 }
+
+#axis1 {
+  -webkit-animation:spin1 10s linear infinite;
+  -moz-animation:spin1 10s linear infinite;
+  animation:spin1 10s linear infinite;
+}
+
+#axis2 {
+  -webkit-animation:spin2 10s linear infinite;
+  -moz-animation:spin2 10s linear infinite;
+  animation:spin2 10s linear infinite;
+}
+
+
+
+
+
+/* Create new animation for one;
+Then create for othetr two;
+Then compile them neatly */
+
+@-moz-keyframes fren-spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes fren-spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes fren-spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg);
+} }
+
+@-moz-keyframes spin1 { 0% { -webkit-transform: rotate(0);}; 100% { -webkit-transform: rotate(540deg); } }
+@-webkit-keyframes spin1 { 0% { -webkit-transform: rotate(0);} 100% { -webkit-transform:rotate(540deg);} }
+@keyframes spin1 { 100% { -webkit-transform: rotate(0); transform:rotate(540deg);}}
+
+
+@-moz-keyframes spin2 { 0% { -webkit-transform: rotate(180);}; 100% { -webkit-transform: rotate(720deg); } }
+@-webkit-keyframes spin2 { 0% { -webkit-transform: rotate(180);} 100% { -webkit-transform:rotate(720deg);} }
+@keyframes spin2 { 100% { -webkit-transform: rotate(180); transform:rotate(720deg);}}
+
 
