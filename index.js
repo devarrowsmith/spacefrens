@@ -3,7 +3,7 @@ console.log('JS is connected.');
 //numSpaceFrens will be replaced with an array containing the names of people in space.
 const sheet = document.styleSheets[0];
 console.log(sheet);
-const numSpaceFrens = Math.floor(Math.random()*6);
+const numSpaceFrens = Math.floor(Math.random()*10);
 const frenSpacingDegrees = 360/numSpaceFrens;
 let angleAdjust = 0;
 
