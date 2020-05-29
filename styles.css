@@ -30,7 +30,7 @@ body {
 
 .textbox {
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 10px;
   height: 15vh;
   max-height: 15vw;
   width: 100vw;
@@ -42,12 +42,12 @@ body {
   align-items: center;
 }
 
-h1 {
+#display h1 {
   font-size: 1.4em;
   color: rgb(255, 168, 7);
 }
 
-p {
+#display p {
   font-size: 1em;
   color: rgb(255, 168, 7);
 }
@@ -66,8 +66,8 @@ p {
 .space_fren_axis{
   height: 15vh;
   max-height: 15vw;
-  width: 70vw;
-  max-width: 70vh;
+  width: 63vw;
+  max-width: 63vh;
   position: absolute;
   display: flex;
   flex-flow: row nowrap;
@@ -80,6 +80,22 @@ p {
   -webkit-animation: fren-spin 20s linear infinite;
   -moz-animation: fren-spin 20s linear infinite;
   animation: fren-spin 20s linear infinite;
+}
+
+
+#infobox {
+  margin: 0 10px 10px 10px;
+}
+
+#infobox h2 {
+  font-weight: normal;
+  font-size: 1em;
+  color: whitesmoke;
+}
+
+#infobox p {
+  font-size: 0.8em;
+  color: whitesmoke;
 }
 
 @-webkit-keyframes fren-spin { 100% { -webkit-transform: rotate(720deg); } }
