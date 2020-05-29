@@ -4,11 +4,16 @@
   "description": "SpaceFrens uses the open-notify.org API to create a visual  representation of the number of people currently in space.",
   "main": "index.js",
   "scripts": {
-    "start": "npx localhost . -p 8000",
+    "start": "nodemon index.js",
     "test": "jest"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
   }
 }
