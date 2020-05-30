@@ -4,7 +4,7 @@ console.log(sheet);
 let angleAdjust = 0;
 
 window
-  .fetch(`http://spacefrens.herokuapp.com/frensdata`)
+  .fetch(`https://spacefrens.herokuapp.com/frensdata`)
   .then((res) => res.json())
   .then((data) => {
     console.log(data);
