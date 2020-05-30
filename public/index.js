@@ -1,6 +1,4 @@
-console.log("JS is connected.");
 const sheet = document.styleSheets[0];
-console.log(sheet);
 let angleAdjust = 0;
 
 window
