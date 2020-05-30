@@ -100,3 +100,116 @@ body {
 }
 
 @-webkit-keyframes fren-spin { 100% { -webkit-transform: rotate(720deg); } }
+
+@media only screen and (max-width: 260px) {
+
+  #display h1 {
+    margin: 0 0 0 5px;
+    font-size: 0.8em;
+    color: rgb(255, 168, 7);
+  }
+  
+  #display p {
+    margin: 0 0 0 5px;
+    font-size: 0.5em;
+    color: rgb(255, 168, 7);
+  }
+
+  #infobox h2 {
+    font-weight: normal;
+    font-size: 0.5em;
+    color: whitesmoke;
+  }
+
+  #infobox p {
+    font-size: 0.5em;
+    color: whitesmoke;
+  }
+
+}
+
+@media only screen and (max-width: 325px) {
+
+  #display h1 {
+    margin: 0 0 0 5px;
+    font-size: 0.8em;
+    color: rgb(255, 168, 7);
+  }
+  
+  #display p {
+    margin: 0 0 0 5px;
+    font-size: 0.8em;
+    color: rgb(255, 168, 7);
+  }
+
+  #infobox {
+    margin: 0 5px 10px 5px;
+  }
+
+  #infobox {
+    margin: 0 5px 10px 5px;
+  }
+
+  #infobox h2 {
+    font-weight: normal;
+    font-size: 0.8em;
+    color: whitesmoke;
+  }
+
+  #infobox p {
+    font-size: 0.8em;
+    color: whitesmoke;
+  }
+}
+
+@media only screen and (min-width: 440px) {
+
+  #display h1 {
+    margin: 0 0 0 10px;
+    font-size: 2.2em;
+    color: rgb(255, 168, 7);
+  }
+  
+  #display p {
+    margin: 0 0 0 10px;
+    font-size: 1.4em;
+    color: rgb(255, 168, 7);
+  }
+
+  #infobox h2 {
+    font-weight: normal;
+    font-size: 1.6em;
+    color: whitesmoke;
+  }
+
+  #infobox p {
+    font-size: 1.2em;
+    color: whitesmoke;
+  }
+}
+
+@media only screen and (min-width: 630px) {
+
+  #display h1 {
+    margin: 0 0 0 10px;
+    font-size: 3.0em;
+    color: rgb(255, 168, 7);
+  }
+  
+  #display p {
+    margin: 0 0 0 10px;
+    font-size: 2.0em;
+    color: rgb(255, 168, 7);
+  }
+
+  #infobox h2 {
+    font-weight: normal;
+    font-size: 1.6em;
+    color: whitesmoke;
+  }
+
+  #infobox p {
+    font-size: 1.2em;
+    color: whitesmoke;
+  }
+}
