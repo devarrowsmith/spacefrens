@@ -1,4 +1,4 @@
-# SpaceFrens
+# SpaceFrens 👩‍🚀
 
 SpaceFrens is a web app that displays the number of people currently in space using a simple animated graphic.
 It pulls this information from the [open-notify.org API](http://open-notify.org/).
@@ -16,7 +16,7 @@ To tinker with the SpaceFrens web app you'll need a suitable dev environment. I 
 
 1. To download the SpaceFrens repository open a UNIX terminal and enter the following command:
 
-	`git clone git@github.com:GummiCode/spacefrens.git`
+	`git clone git@github.com:devarrowsmith/spacefrens.git`
 
 2. Run `NPM Install` to install the required dependencies.
 
