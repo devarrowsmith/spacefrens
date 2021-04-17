@@ -3,6 +3,10 @@
   src: url("./assets/fonts/PressStart2P-Regular.ttf")
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   color: whitesmoke;
   font-family: 'Press Start 2p', sans-serif;
@@ -14,6 +18,7 @@ body {
 }
 
 #display {
+  position: relative;
   width: 100vw;
   height: 100vh;
   max-width: 100vh;
@@ -37,7 +42,14 @@ body {
   background-color: rgba(80, 172, 226, 0.664);
   display: flex;
   flex-flow: row nowrap;
-  justify-content: start;
+  justify-content: space-between;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -46,6 +58,19 @@ body {
   font-size: 1.4em;
   color: rgb(255, 168, 7);
 }
+
+.arrow {
+  height: 80px;
+  margin: 0 30px 0 0;
+}
+
+
+#up-arrow {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
 
 #display p {
   margin: 0 10px 0 10px;
@@ -76,13 +101,23 @@ body {
   
 }
 
-#display img {
+#display img:not(.arrow) {
   height: 100%;
   -webkit-animation: fren-spin 20s linear infinite;
   -moz-animation: fren-spin 20s linear infinite;
   animation: fren-spin 20s linear infinite;
 }
 
+#info-relay {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+#astronaut_info {
+  position: relative;
+  max-width: 100vh;
+}
 
 #infobox {
   margin: 0 10px 10px 10px;
@@ -97,6 +132,10 @@ body {
 #infobox p {
   font-size: 0.8em;
   color: whitesmoke;
+}
+
+#astronaut-info {
+  position: relative;
 }
 
 @-webkit-keyframes fren-spin { 100% { -webkit-transform: rotate(720deg); } }
